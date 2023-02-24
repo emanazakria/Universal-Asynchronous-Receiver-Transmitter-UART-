@@ -1,13 +1,13 @@
 module Parity_Check  # 	( parameter BusWidth 	= 8 ) 
 	(
-		input 	wire  					CLK				,
+		input 	wire  					CLK			,
 		input 	wire  					RST 			,
 		input 	wire  					PAR_CHK_EN 		,
 		input 	wire  					PAR_TYP 		,
-		input 	wire  					SAMPLED_BIT 	,
-		input 	wire 	[BusWidth-1:0] 	P_DATA 			,
+		input 	wire  					SAMPLED_BIT 		,
+		input 	wire 	[BusWidth-1:0] 			P_DATA 			,
 							
-		output 	reg 	PAR_ERR 
+		output 	reg 					PAR_ERR 
 
 	);
 							
