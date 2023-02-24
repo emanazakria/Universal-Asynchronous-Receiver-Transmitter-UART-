@@ -18,7 +18,7 @@ always @ (posedge CLK or negedge RST)
 	if(!RST)
 		begin
 			SAMPLED_BIT 	<= 1'b0		;
-			OneCounter 		<= 2'b0 	;
+			OneCounter 	<= 2'b0 	;
 			ZeroCounter 	<= 2'b0 	;
 		end
 	else if (DAT_SAMP_EN)
