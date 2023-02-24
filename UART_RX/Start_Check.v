@@ -1,6 +1,6 @@
 module Start_Check		
 	(
-		input 	wire  	STRT_CHK_EN		,
+		input 	wire  	STRT_CHK_EN	,
 		input 	wire  	SAMPLED_BIT 	,
 							
 		output 	reg 	STRT_GLITCH 
