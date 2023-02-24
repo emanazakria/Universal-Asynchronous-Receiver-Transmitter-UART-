@@ -6,7 +6,7 @@ module edge_bit_counter  # 	( parameter BusWidth 	= 8 )
 			input 	wire 		PRESCALE 	,
 							  
 			output 	reg	[4:0]	BIT_CNT 	,
-			output 	reg [4:0]	EDGE_CNT 	
+			output 	reg 	[4:0]	EDGE_CNT 	
 							  
 	);
 		
@@ -24,7 +24,7 @@ always @ (posedge CLK or negedge RST)
 	else if (CNT_EN)
 		begin
 			if ( (EDGE_CNT == PRESCALE) && (!edge_count_done) )  
-				EDGE_CNT 		<= EDGE_CNT_REG + 1 		;
+				EDGE_CNT 		<= EDGE_CNT_REG + 1 				;
 			else
 				EDGE_CNT 		<= 'b0 						;
 		end
