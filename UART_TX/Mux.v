@@ -1,8 +1,8 @@
 module mux  
 (
 
- input   wire                  CLK 		,
- input   wire                  RST 		,
+ input   wire                  CLK 	,
+ input   wire                  RST 	,
  input   wire                  IN_0 	,
  input   wire                  IN_1 	,
  input   wire                  IN_2 	,
