@@ -1,9 +1,9 @@
 module Stop_Check		
 	(
-		input 	wire  	CLK				,
+		input 	wire  	CLK			,
 		input 	wire  	RST 			,
 		input 	wire  	STP_CHK_EN		,
-		input 	wire  	SAMPLED_BIT 	,
+		input 	wire  	SAMPLED_BIT 		,
 							
 		output 	reg 	STP_ERR 
 	);
