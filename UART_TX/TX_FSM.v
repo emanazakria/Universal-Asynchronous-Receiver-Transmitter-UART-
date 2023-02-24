@@ -90,19 +90,19 @@ always @ (*)
   case(current_state)
   idle_state   : 
             begin
-			    Ser_enable  = 1'b0  ;
+		Ser_enable  = 1'b0  ;
                 mux_sel     = 2'b11 ;	
                 busy_c      = 1'b0  ;									
             end
   start_state  : 
             begin
-			    Ser_enable  = 1'b0  ;  
+	    	Ser_enable  = 1'b0  ;  
                 busy_c      = 1'b1  ;
                 mux_sel     = 2'b00 ;	
             end
   data_state   : 
             begin 
-			    Ser_enable  = 1'b1  ;    
+		Ser_enable  = 1'b1  ;    
                 busy_c      = 1'b1  ;
                 mux_sel     = 2'b01 ;	
             if(ser_done)
@@ -123,7 +123,7 @@ always @ (*)
   default: 
             begin
                 busy_c      = 1'b0  ;
-			    Ser_enable  = 1'b0  ;
+		Ser_enable  = 1'b0  ;
                 mux_sel     = 2'b00 ;		
             end	
   endcase         	              
